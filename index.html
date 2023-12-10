@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast Site</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body onload="StandardScreen()">
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="container">
+                <div class="valign-wrapper">
+                    <a href="#" class="site-logo center">Weather OverView</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center>
+    <div class="row">
+     <div class="col s12">
+        <div class="center-align">
+         <div class="input-field ">
+            <h4 class ="center-align"for="city-name">Search for a city:</h4>
+            <input type="text" placeholder="Chicago..." id="city-input" required>
+            <a href="#" class="btn col s12" onclick="GetWeather()">Submit</a>
+        </div>
+      </div>
+      <div class="card-panel">
+        <script> // This is where the city names will be stored!</script>
+        <ul id="city-list" class="container">
+            
+        </ul>
+      </div>
+     </div>
+    </div>
+    </center>
+    <div class="row">
+        <div class="col s9 right">
+            <div class="card-panel">
+                <div class="card-content">
+                    <h4 id="city-name">-Chicago-</h4>
+                    <p id="">Current Min:</p>
+                    <p id="">Current Max:</p>
+                    <p id=""> Current Wind:</p>
+                    <p id="">Current Humidity:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 right">
+            <div class="col s9 right card-panel">
+                <h4>5 Day Forecast:</h4>
+              <div class="card-content">
+                  <p class="weather" id="day1"></p>
+                  <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                  <p id="day1Min">Loading...</p>
+                  <p id="day1Max">Loading...</p>
+                  <p id="day1Humidity"></p>
+                  <p id="day1Wind"></p>
+              </div>
+            </div>
+            <div class="col s9 right card-panel">
+              <div class="card-content">
+                  <p class="weather" id="day2"></p>
+                  <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                  <p id="day2Min">Loading...</p>
+                  <p id="day2Max">Loading...</p>
+                  <p id="day2Humidity"></p>
+                  <p id="day2Wind"></p>
+              </div>
+            </div>
+            <div class="col s9 right card-panel">
+                <div class="card-content">
+                    <p class="weather" id="day3"></p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                    <p id="day3Min">Loading...</p>
+                    <p id="day3Max">Loading...</p>
+                    <p id="day3Humidity"></p>
+                    <p id="day3Wind"></p>
+                </div>
+            </div>
+            <div class="col s9 right card-panel">
+                <div class="card-content">
+                    <p class="weather" id="day4"></p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                    <p id="day4Min">Loading...</p>
+                    <p id="day4Max">Loading...</p>
+                    <p id="day4Humidity"></p>
+                    <p id="day4Wind"></p>
+                </div>
+            </div>
+            <div class="col s9 right card-panel">
+                <div class="card-content">
+                    <p class="weather" id="day5"></p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                    <p id="day5Min">Loading...</p>
+                    <p id="day5Max">Loading...</p>
+                    <p id="day5Humidity"></p>
+                    <p id="day5Wind"></p>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="./Assets/javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
